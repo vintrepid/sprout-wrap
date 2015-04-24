@@ -23,7 +23,7 @@ If you receive a message about the update server being unavailable and are on Ma
 
 ### 2. Clone this project
 
-    git clone https://github.com/pivotal-sprout/sprout-wrap.git
+    git clone https://github.com/vintrepid/sprout-wrap.git
     cd sprout-wrap
 
 ### 3. Install soloist & and other required gems
@@ -31,7 +31,7 @@ If you receive a message about the update server being unavailable and are on Ma
 If you're running under rvm or rbenv, you shouldn't preface the following commands with `sudo`.
 
     sudo gem install bundler
-    sudo bundle
+    bundle
 
 If you receive errors like this:
 
