@@ -88,6 +88,7 @@ node_attributes:
         - rbenv-gem-rehash
       casks:
         # - adium
+        - path-finder
         - adobe-reader
         - alfred
         - aviator
@@ -104,8 +105,6 @@ node_attributes:
         - google-hangouts
         - navicat-premium
         - onepassword
-        - path-finder
-        - siege
         - skype
         - textmate
         - vagrant
