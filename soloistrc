@@ -67,6 +67,7 @@ node_attributes:
       magnification: false
     homebrew:
       formulae:
+        - apple-gcc42
         - cdargs
         - ctags-exuberant
         - ag
