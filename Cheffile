@@ -30,7 +30,7 @@ cookbook 'sprout-rubymine',
   :github => 'pivotal-sprout/sprout-rubymine'
 
 cookbook 'sprout-homebrew',
-  :github => 'pivotal-sprout/sprout-homebrew'
+  :github => 'vintrepid/sprout-homebrew'
 
 cookbook 'sprout-terminal',
   :github => 'pivotal-sprout/sprout-terminal'
