@@ -1,7 +1,8 @@
 recipes:
 
 # base (required by sprout)
-- sprout-osx-base::bash_it
+- pivotal_workstation::oh_my_zsh
+#- sprout-osx-base::bash_it
 - pivotal_workstation::create_var_chef_cache
 - sprout-osx-base::homebrew
 
@@ -40,45 +41,65 @@ recipes:
 - sprout-osx-apps::keycastr
 
 # apps (editors)
-- sprout-osx-apps::textmate
-- sprout-osx-apps::textmate_bundles
-- sprout-osx-apps::textmate_preferences
+- sprout-osx-apps::sublime_text
 
 - sprout-osx-apps::macvim
 - sprout-osx-apps::ctags_exuberant
 
-- sprout-osx-apps::rubymine
-- sprout-osx-rubymine::preferences
-
 - sprout-homebrew
 
 node_attributes:
-  git_pairs_domain: pivotallabs.com
+  git_pairs_domain: wildernesstravel.com
   git_pairs_authors:
-    - initials: ah
-      name: Abhijit Hiremagalur
-      shortname: abhi
-    - initials: bc
-      name: Brian Cunnie
-      shortname: cunnie
-    - initials: jrhb
-      name: Jonathan Barnes
-    - initials: lw
-      name: Luke Winikates
-      shortname: lwinikates
+    - initials: vrn
+      name: Vince Nibler
+      shortname: vince
+    - initials: sh
+      name: Shannon Hastings
+      shortname: shannon
+    - initials: sa
+      name: Sommer Antrim
+      shortname: sommer
+    - initials: es
+      name: Erica Schleimer
+      shortname: erica
   git_projects:
     -
       - sprout-wrap
-      - https://github.com/pivotal-sprout/sprout-wrap.git
+      - https://github.com/vintrepid/sprout-wrap.git
   sprout:
     settings:
       clock_format: EEE MMM d  h:mm:ss a
+    rbenv:
+      rubies:
+        1.8.7-p374: {}
+        2.1.6: {}
+        2.2.2: {}
+      default_ruby: 2.1.6
     homebrew:
+      formulae:
+        - cdargs
+        - siege
+        - sphinx
+        - the_silver_searcher
+        #- wkhtmltopdf
       casks:
+        #- adium
+        - adobe-reader
+        - alfred
+        - aviator
+        - dashlane
+        - divvy
         - dropbox
+        - epic
         - firefox
         - gitx-rowanj
         - google-chrome
+        - google-drive
+        - navicat-premium
+        - onepassword
+        - path-finder
+        - siege
         - skype
-        - vagrant
-        - virtualbox
+        #- vagrant
+        #- virtualbox
