@@ -32,7 +32,7 @@ recipes:
 - sprout-osx-apps::shiftit
 
 # apps (editors)
-- sprout-osx-apps::sublime_text
+- sprout-osx-apps::sublime-text3
 - sprout-osx-apps::macvim
 
 node_attributes:
