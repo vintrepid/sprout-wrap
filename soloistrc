@@ -1,105 +1,114 @@
 recipes:
 
 # base (required by sprout)
-- pivotal_workstation::oh_my_zsh
-#- sprout-osx-base::bash_it
-- pivotal_workstation::create_var_chef_cache
-- sprout-osx-base::homebrew
+- sprout-base
+- sprout-base::oh_my_zsh
+- sprout-base::homebrew
+- sprout-homebrew
 
 # settings
-- pivotal_workstation::sshd_on
-- pivotal_workstation::inputrc
-- sprout-osx-settings::defaults_fast_key_repeat_rate
-- pivotal_workstation::locate_on
-- sprout-osx-settings::global_environment_variables
-- sprout-osx-settings::set_menubar_clock_format
+- sprout-osx-settings
+- sprout-osx-settings::dock_preferences
+- sprout-terminal
+- sprout-terminal::update_font
+- sprout-ssh::known_hosts_github
 
 # development (general)
-- sprout-osx-base::workspace_directory
-- pivotal_workstation::unix_essentials
-- sprout-osx-git::git_projects
-- pivotal_workstation::git_config_global_defaults
-- sprout-osx-git::git_scripts
+- sprout-base::workspace_directory
+- sprout-git
+- sprout-git::default_editor
+- sprout-git::projects
+- sprout-git::git_scripts
 
 # development (rails)
-- sprout-osx-rbenv
-- pivotal_workstation::gem_setup
-- pivotal_workstation::mysql
-- pivotal_workstation::postgres
-- sprout-osx-apps::imagemagick
-- sprout-osx-apps::node_js
-- sprout-osx-apps::qt
+- sprout-rbenv
+- sprout-ruby
+- sprout-mysql
+- sprout-postgresql
 
 # apps
-- pivotal_workstation::screen_sharing_app
-- sprout-osx-apps::shiftit
-- pivotal_workstation::mouse_locator
-- sprout-osx-apps::menumeters
-- sprout-osx-apps::ccmenu
-- pivotal_workstation::github_for_mac
 - sprout-osx-apps::iterm2
-- sprout-osx-apps::keycastr
+- sprout-osx-apps::flycut
+- sprout-osx-apps::shiftit
 
 # apps (editors)
 - sprout-osx-apps::sublime_text
-
 - sprout-osx-apps::macvim
-- sprout-osx-apps::ctags_exuberant
-
-- sprout-homebrew
 
 node_attributes:
-  git_pairs_domain: wildernesstravel.com
-  git_pairs_authors:
-    - initials: vrn
-      name: Vince Nibler
-      shortname: vince
-    - initials: sh
-      name: Shannon Hastings
-      shortname: shannon
-    - initials: sa
-      name: Sommer Antrim
-      shortname: sommer
-    - initials: es
-      name: Erica Schleimer
-      shortname: erica
-  git_projects:
-    -
-      - sprout-wrap
-      - https://github.com/vintrepid/sprout-wrap.git
   sprout:
+    git:
+      domain: wildernesstravel.com
+      authors:
+        - initials: vrn
+          name: Vince Nibler
+          username: vince
+        - initials: sh
+          name: Shannon Hastings
+          username: shannon
+        - initials: sa
+          name: Sommer Antrim
+          username: sommer
+        - initials: es
+          name: Erica Schleimer
+          username: erica
+      projects:
+        -
+          name: sprout-wrap
+          url: https://github.com/vintrepid/sprout-wrap.git
+    terminal:
+      default_profile: 'Pro'
     settings:
       clock_format: EEE MMM d  h:mm:ss a
-    rbenv:
-      rubies:
-        1.8.7-p374: {}
-        2.1.6: {}
-        2.2.2: {}
-      default_ruby: 2.1.6
+    dock_preferences:
+      auto_hide: true
+      clear_apps: true
+      tile_size: 35
+      magnification: false
     homebrew:
       formulae:
         - cdargs
+        - ctags-exuberant
+        - ag
+        - chromedriver
+        - imagemagick
+        - node
+        # - pstree # Skip until download url is fixed: https://github.com/Homebrew/homebrew/pull/35135
+        - qt
         - siege
         - sphinx
+        - ssh-copy-id
         - the_silver_searcher
-        #- wkhtmltopdf
+        - tmux
+        - tree
+        - watch
+        - wget
+        # - wkhtmlpdf
+        - rbenv-binstubs
+        - rbenv-gem-rehash
       casks:
-        #- adium
+        # - adium
         - adobe-reader
         - alfred
         - aviator
+        - ccmenu
         - dashlane
         - divvy
         - dropbox
         - epic
         - firefox
         - gitx-rowanj
+        - github
         - google-chrome
         - google-drive
+        - google-hangouts
         - navicat-premium
         - onepassword
         - path-finder
         - siege
         - skype
-        #- vagrant
-        #- virtualbox
+        - textmate
+        - vagrant
+        - virtualbox
+        - xquartz
+        - xscope
