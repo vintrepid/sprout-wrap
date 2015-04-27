@@ -72,6 +72,7 @@ node_attributes:
       tile_size: 35
       magnification: false
     homebrew:
+      taps:
       formulae:
         - apple-gcc42
         - cdargs
