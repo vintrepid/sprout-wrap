@@ -63,7 +63,7 @@ node_attributes:
           name: sprout-wrap
           url: https://github.com/vintrepid/sprout-wrap.git
     terminal:
-      default_profile: 'Pro'
+      default_profile: 'Basic'
     settings:
       clock_format: EEE MMM d  h:mm:ss a
     dock_preferences:
