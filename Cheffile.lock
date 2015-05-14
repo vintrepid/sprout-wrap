@@ -1,8 +1,10 @@
 SITE
   remote: https://supermarket.getchef.com/api/v1
   specs:
+    build-essential (2.2.3)
     dmg (2.2.2)
-    homebrew (1.10.0)
+    homebrew (1.12.0)
+      build-essential (>= 2.1.2)
 
 GIT
   remote: https://github.com/pivotal-sprout/osx
@@ -28,14 +30,6 @@ GIT
       sprout-base (>= 0.0.0)
 
 GIT
-  remote: https://github.com/pivotal-sprout/sprout-homebrew
-  ref: master
-  sha: 67a6a6ba55d9d8e933645ae7fd1331b85b05d1d0
-  specs:
-    sprout-homebrew (0.1.0)
-      homebrew (>= 1.5.4)
-
-GIT
   remote: https://github.com/pivotal-sprout/sprout-mysql
   ref: master
   sha: 7501fffff8a5c6e9237b295ab586595eeb2bb06e
@@ -45,20 +39,9 @@ GIT
       sprout-base (>= 0.0.0)
 
 GIT
-  remote: https://github.com/pivotal-sprout/sprout-osx-apps
-  ref: master
-  sha: 1407e20d95f5b859fdaddd03d30d578e3c061309
-  specs:
-    sprout-osx-apps (0.1.0)
-      dmg (>= 0.0.0)
-      homebrew (>= 1.6.6)
-      sprout-base (>= 0.0.0)
-      sprout-osx-settings (>= 0.0.0)
-
-GIT
   remote: https://github.com/pivotal-sprout/sprout-osx-settings
   ref: master
-  sha: 2470797e8997688b731928cc78f48e51c3562803
+  sha: fa7f68da19bbb9cc45da22020d9043fcfc7ee73e
   specs:
     sprout-osx-settings (0.1.0)
       homebrew (>= 0.0.0)
@@ -77,7 +60,7 @@ GIT
 GIT
   remote: https://github.com/pivotal-sprout/sprout-rbenv
   ref: master
-  sha: e361e7c871d40ecb2649a095a8f8282b5c4f4e7b
+  sha: 7436b84ac159c026961c66b7f96387755f554617
   specs:
     sprout-rbenv (0.1.0)
       homebrew (>= 0.0.0)
@@ -117,6 +100,25 @@ GIT
     sprout-terminal (0.1.0)
       osx (>= 0.0.0)
       sprout-base (>= 0.0.0)
+
+GIT
+  remote: https://github.com/vintrepid/sprout-homebrew
+  ref: master
+  sha: 8ce15b8a4616afe6edac91122d9e023a926046ff
+  specs:
+    sprout-homebrew (0.1.0)
+      homebrew (>= 1.5.4)
+
+GIT
+  remote: https://github.com/vintrepid/sprout-osx-apps
+  ref: master
+  sha: fa60072a6258d4bc6260071b25136ce61a47070c
+  specs:
+    sprout-osx-apps (0.1.0)
+      dmg (>= 0.0.0)
+      homebrew (>= 1.6.6)
+      sprout-base (>= 0.0.0)
+      sprout-osx-settings (>= 0.0.0)
 
 DEPENDENCIES
   osx (>= 0)

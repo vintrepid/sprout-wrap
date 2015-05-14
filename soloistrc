@@ -96,6 +96,7 @@ node_attributes:
         - rbenv-gem-rehash
       casks:
         # - adium
+        - 1password
         - path-finder
         - adobe-reader
         - alfred
@@ -106,7 +107,7 @@ node_attributes:
         - dropbox
         - epic
         - firefox
-        - gitx-rowanj
+        - rowanj-gitx
         - github
         - google-chrome
         - google-drive
