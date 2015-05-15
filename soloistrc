@@ -36,6 +36,7 @@ recipes:
 - sprout-osx-apps::macvim
 
 node_attributes:
+  machine_domain: indus
   sprout:
     rbenv:
       rubies: 
@@ -107,16 +108,21 @@ node_attributes:
         - dropbox
         - epic
         - firefox
+        - flux
         - rowanj-gitx
         - github
         - google-chrome
         - google-drive
         - google-hangouts
+        - handbrake
+        - kaleidoscope
+        - lastpass
         - navicat-premium
         - onepassword
         - skype
         - textmate
         - vagrant
         - virtualbox
+        - vlc
         - xquartz
         - xscope
