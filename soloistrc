@@ -10,7 +10,7 @@ recipes:
 - sprout-osx-settings
 - sprout-osx-settings::dock_preferences
 - sprout-terminal
-- sprout-terminal::update_font
+#- sprout-terminal::update_font
 - sprout-ssh::known_hosts_github
 
 # development (general)
@@ -36,13 +36,13 @@ recipes:
 - sprout-osx-apps::macvim
 
 node_attributes:
-  machine_domain: indus
+  machine_domain: siang
   sprout:
     rbenv:
       rubies: 
         1.8.7-p374: {}
-        2.1.6: {}
-      default_ruby: 2.1.6
+        2.2.2: {}
+      default_ruby: 2.2.2
 
     git:
       domain: wildernesstravel.com
@@ -80,6 +80,7 @@ node_attributes:
         - ctags-exuberant
         - ag
         - chromedriver
+        - graphviz
         - imagemagick
         - node
         # - pstree # Skip until download url is fixed: https://github.com/Homebrew/homebrew/pull/35135
@@ -87,6 +88,7 @@ node_attributes:
         - siege
         - sphinx
         - ssh-copy-id
+        - sublhandler
         - the_silver_searcher
         - tmux
         - tree
@@ -102,6 +104,7 @@ node_attributes:
         - adobe-reader
         - alfred
         - aviator
+        - beyond-compare
         - ccmenu
         - dashlane
         - divvy
@@ -115,12 +118,18 @@ node_attributes:
         - google-drive
         - google-hangouts
         - handbrake
+        - itsycal
         - kaleidoscope
+        - kindle
         - lastpass
+        - lxvii
         - navicat-premium
         - onepassword
+        - rcdefaultapp
         - skype
+        - slack
         - textmate
+        - utorrent
         - vagrant
         - virtualbox
         - vlc
