@@ -113,7 +113,7 @@ GIT
 GIT
   remote: https://github.com/vintrepid/sprout-osx-settings
   ref: master
-  sha: 0c8fe8193fc91a39055555a681e029efb5ebdd31
+  sha: 399d7634b2d369b13f6379748bf3c7994c672464
   specs:
     sprout-osx-settings (0.1.0)
       homebrew (>= 0.0.0)
