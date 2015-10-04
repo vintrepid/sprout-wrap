@@ -21,7 +21,7 @@ cookbook 'sprout-osx-apps',
   :github => 'vintrepid/sprout-osx-apps'
 
 cookbook 'sprout-osx-settings',
-  :github => 'pivotal-sprout/sprout-osx-settings'
+  :github => 'vintrepid/sprout-osx-settings'
 
 cookbook 'osx',
   :github => 'pivotal-sprout/osx'
