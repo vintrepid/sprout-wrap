@@ -100,6 +100,7 @@ node_attributes:
         - rbenv-binstubs
         - rbenv-gem-rehash
       casks:
+        - ngrok
         # - adium
         - 1password
         - path-finder
@@ -126,6 +127,7 @@ node_attributes:
         - lastpass
         - lxvii
         - navicat-premium
+        - navicat-for-mysql
         - onepassword
         - rcdefaultapp
         - skype
@@ -138,3 +140,4 @@ node_attributes:
         - wkhtmltopdf
         - xquartz
         - xscope
+        - wkhtmltopdf
