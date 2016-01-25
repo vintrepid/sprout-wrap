@@ -1,9 +1,9 @@
 SITE
   remote: https://supermarket.getchef.com/api/v1
   specs:
-    build-essential (2.2.3)
-    dmg (2.2.2)
-    homebrew (1.13.0)
+    build-essential (2.2.4)
+    dmg (2.3.0)
+    homebrew (2.0.3)
       build-essential (>= 2.1.2)
 
 GIT
@@ -16,18 +16,27 @@ GIT
 GIT
   remote: https://github.com/pivotal-sprout/sprout-base
   ref: master
-  sha: 005bda5585738bdabbe0efcc76b5849854602e67
+  sha: 1d8fc220053a45748d94cffa5397d717812c18b7
   specs:
     sprout-base (0.2.0)
 
 GIT
   remote: https://github.com/pivotal-sprout/sprout-git
   ref: master
-  sha: bf0b774291ee227fb3f910b23b5841be9e822bb1
+  sha: 2584d4b9d841342d418cf1dc705c70d0c8980292
   specs:
-    sprout-git (0.1.1)
+    sprout-git (0.2.0)
       homebrew (>= 0.0.0)
       sprout-base (>= 0.0.0)
+
+GIT
+  remote: https://github.com/pivotal-sprout/sprout-jetbrains-editors
+  ref: master
+  sha: f76ff8a7d94ba237bc9517cbec3021ba51281f5b
+  specs:
+    sprout-jetbrains-editors (0.1.0)
+      sprout-base (>= 0.0.0)
+      sprout-homebrew (>= 0.0.0)
 
 GIT
   remote: https://github.com/pivotal-sprout/sprout-mysql
@@ -63,15 +72,6 @@ GIT
   specs:
     sprout-ruby (0.1.0)
       sprout-base (>= 0.0.0)
-
-GIT
-  remote: https://github.com/pivotal-sprout/sprout-rubymine
-  ref: master
-  sha: b1b11226f0a435fb3eae0fb846bac315c245ce0e
-  specs:
-    sprout-rubymine (0.1.0)
-      sprout-base (>= 0.0.0)
-      sprout-homebrew (>= 0.0.0)
 
 GIT
   remote: https://github.com/pivotal-sprout/sprout-ssh
@@ -125,13 +125,13 @@ DEPENDENCIES
   sprout-base (>= 0)
   sprout-git (>= 0)
   sprout-homebrew (>= 0)
+  sprout-jetbrains-editors (>= 0)
   sprout-mysql (>= 0)
   sprout-osx-apps (>= 0)
   sprout-osx-settings (>= 0)
   sprout-postgresql (>= 0)
   sprout-rbenv (>= 0)
   sprout-ruby (>= 0)
-  sprout-rubymine (>= 0)
   sprout-ssh (>= 0)
   sprout-terminal (>= 0)
 

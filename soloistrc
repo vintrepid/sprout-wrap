@@ -6,11 +6,14 @@ recipes:
 - sprout-base::homebrew
 - sprout-homebrew
 
+# apps
+- sprout-osx-apps::iterm2
+- sprout-osx-apps::shiftit
+
 # settings
 - sprout-osx-settings
 - sprout-osx-settings::dock_preferences
 - sprout-terminal
-#- sprout-terminal::update_font
 - sprout-ssh::known_hosts_github
 
 # development (general)
@@ -25,11 +28,6 @@ recipes:
 - sprout-ruby
 - sprout-mysql
 - sprout-postgresql
-
-# apps
-- sprout-osx-apps::iterm2
-- sprout-osx-apps::flycut
-- sprout-osx-apps::shiftit
 
 # apps (editors)
 - sprout-osx-apps::sublime_text
@@ -85,7 +83,7 @@ node_attributes:
         - nginx
         - nmap
         - node
-        # - pstree # Skip until download url is fixed: https://github.com/Homebrew/homebrew/pull/35135
+        - pstree
         - qt
         - siege
         - sphinx
@@ -100,6 +98,7 @@ node_attributes:
         - rbenv-binstubs
         - rbenv-gem-rehash
       casks:
+        - ngrok
         # - adium
         - 1password
         - path-finder
@@ -114,6 +113,7 @@ node_attributes:
         - epic
         - firefox
         - flux
+        - flycut
         - rowanj-gitx
         - github
         - google-chrome
@@ -126,6 +126,7 @@ node_attributes:
         - lastpass
         - lxvii
         - navicat-premium
+        - navicat-for-mysql
         - onepassword
         - rcdefaultapp
         - skype
@@ -138,3 +139,4 @@ node_attributes:
         - wkhtmltopdf
         - xquartz
         - xscope
+        - wkhtmltopdf
