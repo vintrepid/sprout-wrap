@@ -1,10 +1,16 @@
 SITE
   remote: https://supermarket.getchef.com/api/v1
   specs:
-    build-essential (2.2.4)
+    build-essential (3.2.0)
+      seven_zip (>= 0.0.0)
+    chef_handler (1.3.0)
     dmg (2.3.0)
-    homebrew (2.0.3)
+    homebrew (2.1.0)
       build-essential (>= 2.1.2)
+    seven_zip (2.0.0)
+      windows (>= 1.2.2)
+    windows (1.39.2)
+      chef_handler (>= 0.0.0)
 
 GIT
   remote: https://github.com/pivotal-sprout/osx
@@ -16,14 +22,15 @@ GIT
 GIT
   remote: https://github.com/pivotal-sprout/sprout-base
   ref: master
-  sha: 1d8fc220053a45748d94cffa5397d717812c18b7
+  sha: 343d6cb841f37d23b849e149a9e64496911ddf7e
   specs:
-    sprout-base (0.2.0)
+    sprout-base (0.3.0)
+      homebrew (>= 0.0.0)
 
 GIT
   remote: https://github.com/pivotal-sprout/sprout-git
   ref: master
-  sha: 2584d4b9d841342d418cf1dc705c70d0c8980292
+  sha: f2af3159527d63cc22a33e577236be326f5e55d9
   specs:
     sprout-git (0.2.0)
       homebrew (>= 0.0.0)
@@ -32,16 +39,16 @@ GIT
 GIT
   remote: https://github.com/pivotal-sprout/sprout-jetbrains-editors
   ref: master
-  sha: f76ff8a7d94ba237bc9517cbec3021ba51281f5b
+  sha: bcfcb62c1095a9ef33477f896ebda47918ad7618
   specs:
     sprout-jetbrains-editors (0.1.0)
+      homebrew (>= 0.0.0)
       sprout-base (>= 0.0.0)
-      sprout-homebrew (>= 0.0.0)
 
 GIT
   remote: https://github.com/pivotal-sprout/sprout-mysql
   ref: master
-  sha: a7eb8b030ccc3350fc04e317dcdc23b0301e67f4
+  sha: 12a264fe5418ae9fc6f5300fe56abec058f4a743
   specs:
     sprout-mysql (0.1.0)
       homebrew (>= 0.0.0)
@@ -68,7 +75,7 @@ GIT
 GIT
   remote: https://github.com/pivotal-sprout/sprout-ruby
   ref: master
-  sha: e10f1a26dbee55cd6349bab638afe74b5a05e3a1
+  sha: 49bef41731174e636be50dcf45ecdd848e0b4847
   specs:
     sprout-ruby (0.1.0)
       sprout-base (>= 0.0.0)
@@ -94,10 +101,11 @@ GIT
 GIT
   remote: https://github.com/vintrepid/sprout-homebrew
   ref: master
-  sha: ec25dd254b62861c981dec127ba6eb0c0edac6b4
+  sha: b7fbcf349860a0bb599187b532c679489b1cc6e2
   specs:
-    sprout-homebrew (0.1.0)
+    sprout-homebrew (0.2.0)
       homebrew (>= 1.5.4)
+      sprout-base (>= 0.0.0)
 
 GIT
   remote: https://github.com/vintrepid/sprout-osx-apps

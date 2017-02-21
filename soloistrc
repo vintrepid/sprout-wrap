@@ -3,15 +3,16 @@ recipes:
 # base (required by sprout)
 - sprout-base
 - sprout-base::bash_it
-- sprout-base::homebrew
-- sprout-homebrew
+- homebrew
+- homebrew::install_formulas
+- homebrew::install_casks
 
 # apps
-- sprout-osx-apps::iterm2
+#- sprout-osx-apps::iterm2
 - sprout-osx-apps::shiftit
 
 # settings
-- sprout-osx-settings
+#- sprout-osx-settings
 - sprout-osx-settings::dock_preferences
 - sprout-terminal
 - sprout-ssh::known_hosts_github
@@ -27,7 +28,7 @@ recipes:
 - sprout-rbenv
 - sprout-ruby
 - sprout-mysql
-- sprout-postgresql
+#- sprout-postgresql
 
 # apps (editors)
 - sprout-osx-apps::sublime_text
@@ -39,8 +40,9 @@ node_attributes:
     rbenv:
       rubies: 
         1.8.7-p374: {}
-        2.2.3: {}
-      default_ruby: 2.2.3
+        2.2.4: {}
+        2.3.1: {}
+      default_ruby: 2.3.1
 
     git:
       domain: wildernesstravel.com
@@ -74,6 +76,7 @@ node_attributes:
       taps:
       formulae:
         - apple-gcc42
+        - autossh
         - cdargs
         - ctags-exuberant
         - ag
@@ -100,9 +103,9 @@ node_attributes:
       casks:
         - ngrok
         # - adium
-        - 1password
+        # - 1password
         - path-finder
-        - adobe-reader
+        #- adobe-reader
         - alfred
         - aviator
         - beyond-compare
@@ -111,7 +114,7 @@ node_attributes:
         - divvy
         - dropbox
         - epic
-        - firefox
+        #- firefox
         - flux
         - flycut
         - rowanj-gitx
@@ -131,7 +134,7 @@ node_attributes:
         - rcdefaultapp
         - skype
         - slack
-        - textmate
+        # - textmate
         - utorrent
         - vagrant
         - virtualbox
